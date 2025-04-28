@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class AnimationRepository {
     private final List<Animation> animations = new ArrayList<>();
 
@@ -16,12 +17,11 @@ public class AnimationRepository {
         animations.add(new Animation("Zach LaVine", "Dunk", 60, 75));
     }
 
-    public List<Animation> getAll(){
+    public List<Animation> getAll() {
         return animations;
     }
 
-    public void add(Animation animation){
+    public void add(Animation animation) {
         animations.add(animation);
     }
-
 }
