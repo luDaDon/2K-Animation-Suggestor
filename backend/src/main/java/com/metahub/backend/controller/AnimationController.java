@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/animations")
+@RequestMapping("/api/animations")
 @CrossOrigin(origins = "*") //for front end access
 
 public class AnimationController {
